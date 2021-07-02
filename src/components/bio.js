@@ -47,9 +47,7 @@ const Bio = () => {
         <>
           <p>
             Personal blog by <strong>{author.name}.</strong>{" "}
-            {author?.summary || null}. If you would like to receive the content
-            I produce every week, read my{" "}
-            <Link to="/newsletter">newsletter manifesto</Link>.
+            {author?.summary || null}
           </p>
         </>
       )}

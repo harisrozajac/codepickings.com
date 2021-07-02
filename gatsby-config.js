@@ -3,13 +3,13 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Haris Rozajac - The Writing Experiment`,
+    title: `Code Pickings`,
     author: {
       name: `Haris Rozajac`,
-      summary: `I write because manuscripts don't burn`,
+      summary: `Writing code, writing text.`,
     },
     description: `Welcome to my writing experiment`,
-    siteUrl: `https://www.harisrozajac.com/`,
+    siteUrl: `https://www.codepickings.com/`,
     keywords: [
       "writing",
       "writing experiment",
@@ -68,7 +68,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Haris Rozajac - The Writing Experiment`,
+        name: `Code Pickings`,
         short_name: `Haris Rozajac`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -79,12 +79,5 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: process.env.GATSBY_PLUGIN_MAILCHIMP_ADDRESS,
-        timeout: 3500,
-      },
-    },
   ],
 }

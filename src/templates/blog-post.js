@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import MailChimpForm from "../components/mailchimpform"
+
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -33,11 +33,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <hr />
         <footer>
           <Bio />
-          <MailChimpForm
-            style={{ marginTop: "-1em" }}
-            text=" Like what you read? Subscribe to my newsletter and receive more
-          quality content each week!"
-          />
         </footer>
       </article>
 
