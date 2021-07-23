@@ -2,7 +2,7 @@
 title: Chessboard | Generate Days | Sum Range
 date: "2021-07-20"
 description: Little scripts that were solutions to some coding exercises
-tags: [Learning]
+tags: [Learning, JavaScript]
 ---
 
 These are three small scripts that I created as I tried to get a better understanding of JavaScript. I didn't look at any solutions or examples online, and just wanted to create my own solutions, however imperfect they might be.
@@ -107,15 +107,14 @@ The only thing left after this is to copy this output to Google doc, selecting t
 
 ## Sum and Range
 
-This exercise was also in _Eloquent Javascript_. The task was to create a function that will take the starting and ending numbers and then create an array that will have have those two numbers and all numbers between them. The third argument is the humber by which we want to increment the numbers in the array.
+This exercise was also in _Eloquent Javascript_. The task was to create a function that will take the starting and ending numbers and then create an array that will have have those two numbers and all numbers between them. The third argument is the number by which to increment the numbers in the array.
 
 ```js
 const range = (start, end, increment) => {
   let arrayNumbers = []
-  let i = start
-  while (i <= end) {
-    arrayNumbers.push(i)
-    i += increment ? increment : 1
+  while (start <= end) {
+    arrayNumbers.push(start)
+    start += increment ? increment : 1
   }
   return arrayNumbers
 }
